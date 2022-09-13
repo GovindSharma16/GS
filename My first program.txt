@@ -1,0 +1,26 @@
+def smn(n,k):
+    if(len(n)==1 and k==1):
+        return n
+        
+    t=str(n)
+    for i in range(k-1):
+        n=n+td
+    sm=n
+    while(len(sm)>1):
+        l=[]
+        a=sm
+        for i in a:
+            l.append(int(i))
+        sm=sum(l)
+        sm=str(sm)
+    return sm
+
+n,k=list(map(int,input().split()))
+n=str(n)
+print(smn(n,k))
+
+I/P:
+148 3
+
+O/P
+3
